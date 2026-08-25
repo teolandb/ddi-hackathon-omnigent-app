@@ -40,9 +40,12 @@
   --sidebar-ring: oklch(0.705 0.015 286.067); */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* --background: oklch(0.141 0.005 285.823);
+/*
+ * Dark theme. Scoped to `:root.dark` (specificity 0,2,0) so it overrides the
+ * design system's `@media (prefers-color-scheme: dark) :root:not(.light)` rule.
+ */
+:root.dark {
+  /* --background: oklch(0.141 0.005 285.823);
     --foreground: oklch(0.985 0 0);
     --card: oklch(0.21 0.006 285.885);
     --card-foreground: oklch(0.985 0 0);
@@ -76,7 +79,6 @@
     --sidebar-primary-foreground: oklch(0.985 0 0);
     --sidebar-accent: oklch(0.274 0.006 286.033);
     --sidebar-accent-foreground: oklch(0.985 0 0);
-    --sidebar-border: oklch(1 0 0 / 10%);
-    --sidebar-ring: oklch(0.552 0.016 285.938); */
-  }
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.552 0.016 285.938); */
 }
