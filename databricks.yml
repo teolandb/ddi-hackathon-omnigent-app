@@ -25,8 +25,18 @@ resources:
       # Start the app automatically on deploy.
       lifecycle:
         started: true
+      # On-behalf-of scopes. `sql` lets the analytics queries run as the
+      # signed-in user; `genie` does the same for the Ask Genie page (this
+      # workspace names the scope `genie`, matching the existing production app).
+      # The catalog/iam read scopes let the app resolve names and identity.
       user_api_scopes:
-        - dashboards.genie
+        - sql
+        - genie
+        - catalog.catalogs:read
+        - catalog.schemas:read
+        - catalog.tables:read
+        - iam.access-control:read
+        - iam.current-user:read
 
       # The resources which this app has access to.
       resources:
