@@ -65,6 +65,6 @@ targets:
       sql_warehouse_id: 71f626c15d31970f
       genie_space_id: 01f19d62e6e41f81b94273ab1ced7101
       genie_space_name: Vanderlande Warehousing Intelligence
-      postgres_branch: projects/vanderlande-appkit-state/branches/production
-      postgres_database: projects/vanderlande-appkit-state/branches/production/databases/databricks-postgres
-      postgres_project: projects/vanderlande-appkit-state
+      postgres_branch: projects/ddi-omnigent-appkit-state/branches/production
+      postgres_database: projects/ddi-omnigent-appkit-state/branches/production/databases/databricks-postgres
+      postgres_project: projects/ddi-omnigent-appkit-state
